@@ -14,22 +14,22 @@ const cube = new THREE.Mesh(
   new THREE.BoxGeometry(5, 5, 5),
   [
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/certs.png"),
+      map: textureLoader.load("certs.png"),
     }),
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/skills.png"),
+      map: textureLoader.load("skills.png"),
     }),
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/experience.png"),
+      map: textureLoader.load("experience.png"),
     }),
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/writers_block.png"),
+      map: textureLoader.load("writers_block.png"),
     }),
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/about.png"),
+      map: textureLoader.load("about.png"),
     }),
     new THREE.MeshStandardMaterial({
-      map: textureLoader.load("/references.png"),
+      map: textureLoader.load("references.png"),
     }),
   ]
 );
@@ -37,12 +37,12 @@ const cube = new THREE.Mesh(
 const light = new THREE.AmbientLight(0xffffff);
 
 const skybox = new THREE.CubeTextureLoader().load([
-  "/pcb.jpg",
-  "/pcb.jpg",
-  "/pcb.jpg",
-  "/pcb.jpg",
-  "/pcb.jpg",
-  "/pcb.jpg"
+  "pcb.jpg",
+  "pcb.jpg",
+  "pcb.jpg",
+  "pcb.jpg",
+  "pcb.jpg",
+  "pcb.jpg"
 ]);
 
 // set positions
